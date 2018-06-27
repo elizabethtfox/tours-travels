@@ -30,10 +30,6 @@ Chrome, Firefox, Safari, IE
 
 No installation required just download and open in your browser
 
-## Running the tests
-
-There is a commented line that will show you the computer output.
-
 ## Built With
 
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used
