@@ -56,9 +56,9 @@ No installation required just download and open in your browser
 * Final - 7/24/18
 
 ## Deliverable 1
-* **Mariam Chaudry** - UI design layouts, Schedule
-* **Elizabeth Fox** - Overview, UI
-* **Catherine Muthoni** - Breakdown of roles, PM Board, UI
+* **Mariam Chaudry** - UI/UX design layouts, Schedule
+* **Elizabeth Fox** - Overview, UI/UX
+* **Catherine Muthoni** - Breakdown of roles, PM Board, UI/UX
 
 ## License
 
