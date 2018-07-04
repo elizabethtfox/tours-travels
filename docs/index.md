@@ -1,4 +1,4 @@
-# :handbag: Tours & Travel
+# Tours & Travel
 
 Have you ever wanted a travel buddy? Tours & Travel can be your most reliable buddy!
 
