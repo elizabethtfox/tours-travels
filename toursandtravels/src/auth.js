@@ -5,13 +5,26 @@ import history from './history';
 export default class Auth {
   // Please use your own credentials here
   auth0 = new auth0.WebAuth({
-    domain: 'divyanshu.auth0.com',
-    clientID: 'TJyKPI6aRiRwgr6SxlT7ExW10NEHW4Vy',
-    redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://appbaseio-apps.github.io/reactivesearch-auth0-example/callback',
-    audience: 'https://divyanshu.auth0.com/userinfo',
+    domain: 'toursandtravels.auth0.com',
+    clientID: '8GgYOc2cudh6RtkvGkf6qsahTPwUECgX',
+    redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'www.google.com',
+    audience:'https://toursandtravels.auth0.com/userinfo',
     responseType: 'token id_token',
     scope: 'openid'
+
+  //   // https://toursandtravels.auth0.com/userinfo
+  //   // 'https://divyanshu.auth0.com/userinfo'
   });
+
+  // auth0 = new auth0.WebAuth({
+  //   domain: 'divyanshu.auth0.com',
+  //   clientID: 'TJyKPI6aRiRwgr6SxlT7ExW10NEHW4Vy',
+  //   redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://appbaseio-apps.github.io/reactivesearch-auth0-example/callback',
+  //   audience: 'https://divyanshu.auth0.com/userinfo',
+  //   responseType: 'token id_token',
+  //   scope: 'openid'
+  // });
+
 
   login = () => {
     this.auth0.authorize();
