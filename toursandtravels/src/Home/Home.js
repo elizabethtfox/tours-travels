@@ -35,8 +35,8 @@ class Home extends Component {
         {
           !isAuthenticated() && (
             <div className="container column">
+            <img className="bg" src={ Background } alt="Sweden" />
               <h5>Tours and Travels</h5>
-              <img src={ Background } alt="Sweden" />
               <h5>
                 You are not logged in! Please{' '}
                 <a
