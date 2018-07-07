@@ -37,18 +37,18 @@ class Lists extends Component {
     render() {
         return (
             <div className="App">
-            <div className="todo-wrapper">
-            <Header />
-            <Input todoText="" addTodo={this.addTodo}/>
-        <ul>
-        {
-            this.state.todos.map((todo) => {
-            return <Item todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo} />
-    })
-    }
-    </ul>
-        </div>
-        </div>
+                <div className="todo-wrapper">
+                    <Header />
+                    <Input todoText="" addTodo={this.addTodo}/>
+                    <ul>
+                    {
+                        this.state.todos.map((todo) => {
+                        return <Item todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo} />
+                        })
+                     }
+                    </ul>
+                </div>
+            </div>
     );
     }
 }
