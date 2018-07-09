@@ -13,7 +13,7 @@ class Lists extends Component {
                 {id: 1, text: "Raincoat"}
             ],
             nextId: 2
-        }
+        };
 
         this.addTodo = this.addTodo.bind(this);
         this.removeTodo = this.removeTodo.bind(this);
