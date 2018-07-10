@@ -5,19 +5,19 @@ import "./SearchForm.css";
 const SearchForm = props => (
   <form className="search">
     <div className="form-group">
-      <label htmlFor="breed">Restaurant Type:</label>
+      <label htmlFor="Restaurant">Restaurant Type:</label>
       <input
         value={props.search}
         onChange={props.handleInputChange}
-        name="breed"
-        list="breeds"
+        name="term"
+        list="location"
         type="text"
         className="form-control"
         placeholder="Type in a restaurant type to begin"
-        id="breed"
+        id="term"
       />
-      <datalist id="breeds">
-        {props.breeds.map(breed => <option value={breed} key={breed} />)}
+      <datalist id="location">
+        {props.location.map(term => <option value={term} key={term} />)}
       </datalist>
       <button
         type="submit"
