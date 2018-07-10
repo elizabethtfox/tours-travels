@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import Home from './Home/Home';
+// /Users/mariamchaudry/gtcbc/homework/tours-travels/toursandtravels/src/Home/Home.js
 import Callback from './Callback';
 import Auth from './auth';
 import history from './history';
