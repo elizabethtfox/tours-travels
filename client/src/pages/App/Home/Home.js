@@ -16,7 +16,10 @@ class Home extends Component {
     // calls the isAuthenticated method in authentication service
     const { isAuthenticated } = this.props.auth;
     return (
-      <div>
+
+      // Everything needs to be in this div //
+
+      <div> 
         {
           isAuthenticated() &&
           <div className="container column">
@@ -51,6 +54,7 @@ class Home extends Component {
             </div>
           )
         }
+        
       </div>
       );
     }
