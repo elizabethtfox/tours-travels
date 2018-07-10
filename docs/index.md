@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# :handbag: Tours & Travel
-=======
 # Tours & Travel
->>>>>>> 83438b21a9cb16c0d5d51a15ced51b67c65ecb5e
 
 Have you ever wanted a travel buddy? Tours & Travel can be your most reliable buddy!
 
@@ -39,9 +35,6 @@ They'll be able to:
 * Final - 7/24/18
 
 ## UI/UX Details
-<<<<<<< HEAD
-* Task breakdown included in UI/UX details
-=======
 * Task breakdown included in UI/UX details
 
 ![landingpage](https://user-images.githubusercontent.com/32858340/42249731-f20953ac-7efa-11e8-90aa-98b8f41ae76c.png)
@@ -53,4 +46,4 @@ They'll be able to:
 ![packinglist](https://user-images.githubusercontent.com/32858340/42249784-2ad3cb9a-7efb-11e8-907a-f23af14fe05e.png)
 ![thingstodo](https://user-images.githubusercontent.com/32858340/42249785-2cfad7d8-7efb-11e8-9951-b4def519032d.png)
 ![needtoknow](https://user-images.githubusercontent.com/32858340/42249789-3639cbf6-7efb-11e8-9243-eda939cc31c2.png)
->>>>>>> 83438b21a9cb16c0d5d51a15ced51b67c65ecb5e
+
