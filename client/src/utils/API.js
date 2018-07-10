@@ -17,8 +17,8 @@ export default {
   //   return axios.get("https://dog.ceo/api/breeds/image/random");
   // },
   getRestaurantsOfTerm: function(term, location) {
-    //  return axios.get("https://api.yelp.com/v3/businesses/search?term=" + term + "&location=" + location);
-    return axios.get(BASEURL + term + "&location=" + location + APIKEY);
+    return axios.get("https://api.yelp.com/v3/businesses/search?term=" + term + "&location=" + location);
+    // return axios.get(BASEURL + term + "&location=" + location + APIKEY);
 
    
   },
