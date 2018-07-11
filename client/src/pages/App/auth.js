@@ -7,7 +7,7 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'toursandtravels.auth0.com',
     clientID: '8GgYOc2cudh6RtkvGkf6qsahTPwUECgX',
-    redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'www.google.com',
+    redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://www.google.com',
     audience:'https://toursandtravels.auth0.com/userinfo',
     responseType: 'token id_token',
     scope: 'openid'
