@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import './Home.css'; 
-import App from '../App';
 import Background from '../Home/sweden.jpeg';
+import App from '../Carousel';
+import { Button } from 'react-materialize';
+
+
+// Not Needed // 
+// import Carousel from '../App';
+// import Carousel from '../../../components/Carousel/Carousel';
+// import Carousel from './App/Carousel/Carousel.js';
 
 class Home extends Component {
   // calls the login method in authentication service
@@ -23,15 +30,23 @@ class Home extends Component {
         {
           isAuthenticated() &&
           <div className="container column">
-            <h5>
-              You are logged in!{' '}
+            {/* <h5>
+              You are logged in!{' '} */}
+
+              <div className="valign-wrapper">
+              <Button>
               <a
                 style={{ cursor: 'pointer' }}
                 onClick={this.logout}
               >
                 Log Out
-              </a>.
-            </h5>
+              </a>
+              </Button>
+              </div>
+            {/* </h5> */}
+
+            <br/>
+
             <App />
           </div>
         }
@@ -40,9 +55,8 @@ class Home extends Component {
             <div className="container column">
             <img className = "bg" src = { Background } alt = "Sweden" />
               <h5>Tours and Travels</h5>
-              {/* <img src={ Background } alt="Sweden" /> */}
               <h5>
-                You are not logged in! Please{' '}
+                Please{' '}
                 <a
                   style={{ cursor: 'pointer' }}
                   onClick={this.login}
@@ -55,8 +69,10 @@ class Home extends Component {
           )
         }
 
-        
-        
+       <div> 
+         <img>
+         </img>
+      </div>
 
       </div>
       );
