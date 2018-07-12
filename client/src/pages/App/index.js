@@ -1,11 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
+import ReactDOM from 'react-dom'; 
 
 import './index.css';
 import Routes from './Routes';
 
+
 ReactDOM.render(<Routes />, document.getElementById('root'));
+
+
 
 export { default } from "./Routes.js";
 

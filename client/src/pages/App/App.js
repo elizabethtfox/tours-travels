@@ -1,96 +1,59 @@
 import React, { Component } from "react";
-import {
-  ReactiveBase,
-  CategorySearch,
-  RatingsFilter,
-  ResultCard
-} from '@appbaseio/reactivesearch';
+import { Button } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
+import { Picture } from './App/sweden.jpeg';
 
 class App extends Component {
-  onData(res) {
-    const result = {
-      image: "https://www.enterprise.com/content/dam/global-vehicle-images/cars/FORD_FOCU_2012-1.png",
-      title: res.name,
-      rating: res.rating,
-      desc: res.brand,
-      url: "#"
-    };
-    return result;
-  }
+  // onData(res) {
+  //   const result = {
+  //   };
+  //   return result;
+  // }
 
   render() {
     return (
-      // <ReactiveBase
-      //   app="car-store"
-      //   credentials="cf7QByt5e:d2d60548-82a9-43cc-8b40-93cbbe75c34c"
-      // >
-      //   <div className="row reverse-labels">
-      //     <div className="col s6 col-xs-6">
-      //       <div className="row">
-      //         <div className="col s12 col-xs-12">
-      //           <CategorySearch
-      //             componentId="SearchSensor"
-      //             dataField="name"
-      //             categoryField="brand.raw"
-      //             placeholder="Search Cars"
-      //           />
-      //         </div>
-      //         <div className="col s12 col-xs-12">
-      //           <RatingsFilter
-      //             componentId="RatingsSensor"
-      //             dataField="rating"
-      //             title="RatingsFilter"
-      //             data={
-      //               [{ start: 4, end: 5, label: "4 stars and up" },
-      //               { start: 3, end: 5, label: "3 stars and up" },
-      //               { start: 2, end: 5, label: "2 stars and up" },
-      //               { start: 1, end: 5, label: "> 1 stars" }]
-      //             }
-      //             defaultSelected={{
-      //                 "start": 3,
-      //                 "end": 5
-      //             }}
-      //           />
-      //         </div>
-      //       </div>
-      //     </div>
-      //     <div className="col s6 col-xs-6">
-      //       <ResultCard
-      //         componentId="SearchResult"
-      //         dataField="name"
-      //         title="Results"
-      //         from={0}
-      //         size={20}
-      //         onData={this.onData}
-      //         sortOptions={[
-      //           {
-      //               label: "Lowest Price First",
-      //               dataField: "price",
-      //               sortBy: "asc"
-      //           },
-      //           {
-      //               label: "Highest Price First",
-      //               dataField: "price",
-      //               sortBy: "desc"
-      //           },
-      //           {
-      //               label: "Most rated",
-      //               dataField: "rating",
-      //               sortBy: "desc"
-      //           }
-      //         ]}
-      //         react={{
-      //             and: ["SearchSensor", "RatingsSensor"]
-      //         }}
-      //       />
-      //     </div>
-      //   </div>
-      // </ReactiveBase>
       <div>
-        Hi </div>
+
+      Hi this is Mariam 
+
+      <Button bsStyle="primary">Hit me!</Button>
+
+      {/* <Carousel>
+      <Carousel.Item>
+        <img width={900} height={600} alt="sweden" src={ Picture } />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width={900} height={500} alt="900x500" src="/carousel.png" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width={900} height={500} alt="900x500" src="/carousel.png" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      </Carousel> */}
+
+     </div>
+
       );
     };
   
   }
 
-  export default App;
+
+// export default () => (
+//   <Button waves='light'>
+//     <Icon>thumb_up</Icon>
+//   </Button>
+// )
+
+export default App; 
