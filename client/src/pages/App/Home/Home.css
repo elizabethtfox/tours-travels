@@ -50,3 +50,11 @@ h5 {
     z-index: 1;
 }
 
+.button {
+    align-self: right; 
+}
+
+.valign-wrapper {
+    text-align: center; 
+}
+
