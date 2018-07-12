@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css'; 
 import Background from '../Home/sweden.jpeg';
-import App from '../App';
+import App from '../Carousel';
 import { Button } from 'react-materialize';
 
 
@@ -56,7 +56,7 @@ class Home extends Component {
             <img className = "bg" src = { Background } alt = "Sweden" />
               <h5>Tours and Travels</h5>
               <h5>
-                You are not logged in! Please{' '}
+                Please{' '}
                 <a
                   style={{ cursor: 'pointer' }}
                   onClick={this.login}
@@ -70,6 +70,8 @@ class Home extends Component {
         }
 
        <div> 
+         <img>
+         </img>
       </div>
 
       </div>

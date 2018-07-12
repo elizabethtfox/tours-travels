@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Carousel, Button, Icon} from 'react-materialize';
+import {Carousel} from 'react-materialize';
 
 class App extends Component {
   render() {
@@ -17,8 +17,7 @@ class App extends Component {
       ]} />
 
     </div>
-    {/* <Button waves='light'>Connect with me!<Icon left>Call Made</Icon></Button> */}
-
+  
     </div> 
     
     );
