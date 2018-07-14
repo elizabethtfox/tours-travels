@@ -32,7 +32,7 @@ const Needtoknow = () => (
                         <img className="img-responsive" src={ passport } width="200" alt="passport"/>
                     </a>
                     {'\n'}
-          Learn about specific information about your destination, safety and security information, travel advisories and visa information.
+          Learn specific information about your destination, safety and security information, travel advisories and visa information.
           
           </p>
 
@@ -42,7 +42,7 @@ const Needtoknow = () => (
                         <img className="img-responsive" src={currency} width="200" alt="currency"/>
                     </a>
 
-          Currency ConverterS
+          Currency Converters
 
           </p>
 
