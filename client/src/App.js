@@ -5,17 +5,22 @@ import Map from "./pages/Map";
 import App from "./pages/App";
 //import NoMatch from "./pages/NoMatch";
 import './App.css';
+import Overview from "./pages/Overview";
+import Needtoknow from "./pages/Needtoknow";
+
 
 const Test = () => (
-<Router>
-<div>
-<Switch>
-<Route exact path="/" component={App} />
-<Route exact path="/lists" component={Lists} />
-<Route exact path="/map" component={Map} />
-</Switch>
-</div>
-</Router>
+    <Router>
+        <div>
+            <Switch>
+                <Route exact path="/home" component={App} />
+                <Route exact path="/lists" component={Lists} />
+                <Route exact path="/map" component={Map} />
+                <Route exact path="/food" component={Overview} />
+                <Route exact path="/need" component={Needtoknow} />
+            </Switch>
+        </div>
+    </Router>
 );
 
 export default Test;
