@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const listSchema = new Schema ({
-    category: { type: String, required: true },
-    items: String,
+    item: String,
     date: { type: Date, default: Date.now }
 });
 

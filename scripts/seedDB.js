@@ -10,8 +10,7 @@ mongoose.connect(
 
 const listSeed = [
     {
-        category: "Tolietries",
-        items: ["Toothbrush", "Toothpaste"],
+        item: "Toothbrush",
         date: new Date(Date.now())
     }
 ];
@@ -19,11 +18,11 @@ const listSeed = [
 db.List
     .remove({})
     .then(() => db.List.collection.insertMany(listSeed))
-    .then(data => {
-        console.log(data.result.n + " records inserted!");
-        process.exit(0);
-    })
-    .catch(err => {
-        console.error(err);
-        process.exit(1);
-    });
+.then(data => {
+    console.log(data.result.n + " records inserted!");
+process.exit(0);
+})
+.catch(err => {
+    console.error(err);
+process.exit(1);
+});

@@ -1,25 +1,25 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Lists from "./pages/Lists";
+import Map from "./pages/Map";
+import App from "./pages/App";
+//import NoMatch from "./pages/NoMatch";
 import Overview from "./pages/Overview";
 import Needtoknow from "./pages/Needtoknow";
-import Search from "./pages/Search";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
+import './App.css';
 
-const App = () => (
-  <Router>
-    <div>
-      <Navbar />
-      <Wrapper>
-        <Route exact path="/" component={Overview} />
-        <Route exact path="/overview" component={Overview} />
-        <Route exact path="/search" component={Search} />
-        <Route exact path="/needtoknow" component={Needtoknow} />
-      </Wrapper>
-      <Footer />
-    </div>
-  </Router>
+const Test = () => (
+<Router>
+<div>
+<Switch>
+    <Route exact path="/" component={App} />
+    <Route exact path="/lists" component={Lists} />
+    <Route exact path="/map" component={Map} />
+    <Route exact path="/food" component={Overview} />
+    <Route exact path="/need" component={Needtoknow} />
+</Switch>
+</div>
+</Router>
 );
 
-export default App;
+export default Test;
