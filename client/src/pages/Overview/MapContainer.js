@@ -134,7 +134,7 @@ export default class MapContainer extends Component {
 
   render() {
     const style = {
-      width: '90vw', // 90vw basically means take up 90% of the width screen. px also works.
+      width: '75vw', // 90vw basically means take up 90% of the width screen. px also works.
       height: '75vh' // 75vh similarly will take up roughly 75% of the height of the screen. px also works.
     }
 

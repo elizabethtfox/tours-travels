@@ -18,7 +18,7 @@ const Needtoknow = () => (
     <Container style={{ marginTop: 30 }}>
         <Row>
             <Col size="md-12">
-                <h1>Important Things You Need to Know</h1>
+                <h1 style={{ textAlign: 'center' }}>Important Things You Need to Know</h1>
             </Col>
         </Row>
         <Row>
