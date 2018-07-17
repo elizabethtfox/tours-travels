@@ -3,7 +3,7 @@ import './Home.css';
 import Background from '../Home/sweden.jpeg';
 import App from '../Carousel';
 import { Button } from 'react-materialize';
-// import history from '../history';
+import history from '../history';
 // import { Link } from 'react-router-dom';
 // import Icon from '././Icons/airplane-1.png';
 // /Users/mariamchaudry/gtcbc/homework/tours-travels/client/src/pages/App/Home/Icons/airplane-1.png
@@ -25,9 +25,10 @@ class Home extends Component {
     this.props.auth.logout();
   }
 
-  // flight = () => {
-  //   history.replace("/lists");
-  // }
+  flight = () => {
+    window.location.reload();
+    history.replace("/lists");
+  }
   
   render() {
     // calls the isAuthenticated method in authentication service
@@ -81,9 +82,9 @@ class Home extends Component {
          <Button onClick={this.flight}>
            Flight
         </Button>
-        <Link to='/lists'>
+        {/* <Link to='/lists'>
            Flight Link
-        </Link>
+        </Link> */}
       </div>
 
       </div>
@@ -91,8 +92,7 @@ class Home extends Component {
     }
   }
 
-  
-
-  export default Home;
 
   /* <a><img src = { Icon } onClick={this.flight}/></a> */
+
+  export default Home;
