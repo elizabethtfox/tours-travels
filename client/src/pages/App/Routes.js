@@ -4,7 +4,6 @@ import Home from './Home/Home';
 import Callback from './Callback';
 import Auth from './auth';
 import history from './history';
-
 const auth = new Auth();
 
 const handleAuthentication = (nextState, replace) => {
