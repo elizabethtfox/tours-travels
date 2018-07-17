@@ -27,7 +27,7 @@ const Needtoknow = () => (
                  <a href={"https://travel.state.gov/content/travel/en/international-travel.html"} target="_blank"> <img className="img-responsive" src={ passport } width="200" alt="passport"/>
                  </a>
                 {'\n'}
-                Learn about specific information about your destination, safety and security information, travel advisories and visa information.
+                Learn about specific information about your destination, safety, security information, travel advisories and visa information.
                 </p>
 
                 <p>

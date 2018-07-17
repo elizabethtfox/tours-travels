@@ -33,10 +33,14 @@
 
 #map {
   margin-left: 100px;
+
+  
 }
 
 #map-container {
   margin-right: 5%;
+  width: 50;
+  height: 50; 
 }
 
 @keyframes App-logo-spin {
