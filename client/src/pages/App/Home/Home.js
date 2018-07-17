@@ -25,11 +25,32 @@ class Home extends Component {
     this.props.auth.logout();
   }
 
+  // functions for category buttons //
   flight = () => {
     window.location.reload();
     history.replace("/lists");
   }
-  
+
+  packinglist = () => {
+    window.location.reload();
+    history.replace("/lists");
+  }
+
+  maps = () => {
+    window.location.reload();
+    history.replace("/map");
+  }
+
+  needToKnow = () => {
+    window.location.reload();
+    history.replace("/need");
+  }
+
+  food = () => {
+    window.location.reload();
+    history.replace("/food");
+  }
+
   render() {
     // calls the isAuthenticated method in authentication service
     const { isAuthenticated } = this.props.auth;
@@ -79,12 +100,26 @@ class Home extends Component {
 
        <div> 
   
-         <Button onClick={this.flight}>
+        <Button onClick={this.flight}>
            Flight
         </Button>
-        {/* <Link to='/lists'>
-           Flight Link
-        </Link> */}
+
+        <Button onClick={this.packinglist}>
+           Packing List
+        </Button>
+
+        <Button onClick={this.maps}>
+           Maps
+        </Button>
+
+        <Button onClick={this.needToKnow}>
+           Need to Know
+        </Button>
+
+        <Button onClick={this.food}>
+           Food &amp; Dining
+        </Button>
+
       </div>
 
       </div>
