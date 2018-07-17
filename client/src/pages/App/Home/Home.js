@@ -51,6 +51,11 @@ class Home extends Component {
     history.replace("/food");
   }
 
+  hotel = () => {
+    window.location.reload();
+    history.replace("/Hotel.html");
+  }
+
   render() {
     // calls the isAuthenticated method in authentication service
     const { isAuthenticated } = this.props.auth;
@@ -118,6 +123,10 @@ class Home extends Component {
 
         <Button onClick={this.food}>
            Food &amp; Dining
+        </Button>
+
+        <Button onClick={this.hotel}>
+           Hotel
         </Button>
 
       </div>
