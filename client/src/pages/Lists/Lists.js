@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
 import Input from '../../components/Input/Input';
 import Item from '../../components/Item/Item';
+import Hero from "../../components/Hero";
+import back from "../../images/list-background.jpeg"
+import "./Lists.css";
 
 class Lists extends Component {
     constructor(props){
@@ -9,7 +12,7 @@ class Lists extends Component {
 
         this.state = {
             todos: [
-                {id: 0, text: "Stretchy pants"},
+                {id: 0, text: "Blue Jeans"},
                 {id: 1, text: "Raincoat"}
             ],
             nextId: 2
@@ -37,6 +40,11 @@ class Lists extends Component {
     render() {
         return (
             <div className="App">
+                <Hero backgroundImage= { back }>
+                </Hero>
+
+                <h2>Don't forget any items for your trip!</h2>
+
                 <div className="todo-wrapper">
                     <Header />
                     <Input todoText="" addTodo={this.addTodo}/>

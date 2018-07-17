@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 //import './Map.css';
 
+import Hero from "../../components/Hero";
+import Container from "../../components/Container";
+import Row from "../../components/Row";
+import Col from "../../components/Col";
+import photo from "../../images/thingstodo.jpeg"
+
 // import the Google Maps API Wrapper from google-maps-react
 import { GoogleApiWrapper } from 'google-maps-react'
 // import child component
@@ -9,10 +15,18 @@ class Map extends Component {
     render() {
         return (
             <div>
-            <h1>Your Destination's Top Spots</h1>
-        <MapContainer google={this.props.google} />
-        <p>Created using Google Maps API and Create-React-App</p>
-        </div>
+                <Hero backgroundImage= { photo }>
+                </Hero>
+                <Container style={{ marginTop: 30 }}>
+                    <Row>
+                        <Col size="md-12">
+                            <h1 style={{ textAlign: 'center' }}>Your Destination's Top Spots</h1>
+                            <MapContainer google={this.props.google} />
+                            <p>Created using Google Maps API and Create-React-App</p>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
     );
     }
 }
