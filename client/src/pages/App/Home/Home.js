@@ -4,10 +4,6 @@ import Background from '../Home/sweden.jpeg';
 import App from '../Carousel';
 import { Button } from 'react-materialize';
 import history from '../history';
-// import { Link } from 'react-router-dom';
-// import Icon from '././Icons/airplane-1.png';
-// /Users/mariamchaudry/gtcbc/homework/tours-travels/client/src/pages/App/Home/Icons/airplane-1.png
-
 
 // Not Needed // 
 
@@ -53,7 +49,7 @@ class Home extends Component {
 
   hotel = () => {
     window.location.reload();
-    history.replace("/Hotel.html");
+    history.replace("https://mariamschaudry.github.io/travel/Hotel.html");
   }
 
   render() {
@@ -125,9 +121,10 @@ class Home extends Component {
            Food &amp; Dining
         </Button>
 
-        <Button onClick={this.hotel}>
-           Hotel
-        </Button>
+        <button>
+         <a href="https://mariamschaudry.github.io/travel/Hotel.html">Hotel</a>
+        </button>
+        
 
       </div>
 
@@ -135,8 +132,5 @@ class Home extends Component {
       );
     }
   }
-
-
-  /* <a><img src = { Icon } onClick={this.flight}/></a> */
 
   export default Home;
