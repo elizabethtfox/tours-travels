@@ -9,8 +9,6 @@ import Overview from "./pages/Overview";
 import Needtoknow from "./pages/Needtoknow";
 import './App.css';
 
-// import Hotel from "./pages/Hotel";
-
 const Test = () => (
 <Router>
 <div>
@@ -20,8 +18,7 @@ const Test = () => (
     <Route exact path="/map" component={Map} />
     <Route exact path="/food" component={Overview} />
     <Route exact path="/need" component={Needtoknow} />
-    
-    
+        
 </Switch>
 </div>
 </Router>

@@ -12,19 +12,7 @@ export default class Auth {
     responseType: 'token id_token',
     scope: 'openid'
 
-  //   // https://toursandtravels.auth0.com/userinfo
-  //   // 'https://divyanshu.auth0.com/userinfo'
   });
-
-  // auth0 = new auth0.WebAuth({
-  //   domain: 'divyanshu.auth0.com',
-  //   clientID: 'TJyKPI6aRiRwgr6SxlT7ExW10NEHW4Vy',
-  //   redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://appbaseio-apps.github.io/reactivesearch-auth0-example/callback',
-  //   audience: 'https://divyanshu.auth0.com/userinfo',
-  //   responseType: 'token id_token',
-  //   scope: 'openid'
-  // });
-
 
   login = () => {
     this.auth0.authorize();
@@ -35,9 +23,10 @@ export default class Auth {
     this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult);
+        window.location.reload();
         history.replace('/');
       } else if (err) {
-        history.replace('/home');
+        history.replace('/');
         console.log(err);
       }
     });
