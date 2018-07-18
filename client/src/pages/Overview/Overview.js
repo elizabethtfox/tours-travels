@@ -16,15 +16,15 @@ class Overview extends Component {
         return (
             <div>
         <Hero backgroundImage="https://images.pexels.com/photos/5249/bread-food-restaurant-people.jpg?cs=srgb&dl=beer-bread-delicious-5249.jpg&fm=jpg">
-            {/* <h1>Pupster</h1>
-      <h2>They're the Good Boys and Girls</h2> */}
+            
             </Hero>
             <Container style={{ marginTop: 30 }}>
     <Row>
         <Col size="md-12">
-            <h1>Eat, drink and be merry!</h1>
+            <h1 style={{ textAlign: 'center' }}>Eat, drink and be merry!</h1>
         </Col>
         </Row>
+        
         <Row>
         <Col size="md-12">
         <p>
@@ -37,13 +37,17 @@ class Overview extends Component {
         Eat your way through the city! Bon appetit'!
         </p>
 
-        <h1> Restaurant Locator </h1>
+        <h1 style={{ textAlign: 'center' }}> Restaurant Locator </h1>
 
+        {/* <MapContainer google={this.props.google} /> */}
         <MapContainer google={this.props.google} />
-
+        <p>Created using Google Maps Geocoder API and Create-React-App</p>
         </Col>
         </Row>
+       
         </Container>
+        {/* <MapContainer google={this.props.google} /> */}
+        
         </div>
     );
     }
@@ -51,7 +55,3 @@ class Overview extends Component {
 export default GoogleApiWrapper({
     apiKey: 'AIzaSyAC-UBAmHBb8SKuwLcvT0LJaC3Upq4DCVo',
 })(Overview)
-
-
-
-
