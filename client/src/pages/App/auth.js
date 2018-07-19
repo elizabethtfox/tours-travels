@@ -3,7 +3,6 @@ import auth0 from 'auth0-js';
 import history from './history';
 
 export default class Auth {
-  // Please use your own credentials here
   auth0 = new auth0.WebAuth({
     domain: 'toursandtravels.auth0.com',
     clientID: '8GgYOc2cudh6RtkvGkf6qsahTPwUECgX',

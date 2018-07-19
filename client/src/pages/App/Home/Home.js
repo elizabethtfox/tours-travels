@@ -3,13 +3,8 @@ import './Home.css';
 import Background from '../Home/sweden.jpeg';
 import App from '../Carousel';
 import { Button } from 'react-materialize';
+import Buttons from './../Buttons/Buttons';
 import history from '../history';
-
-// Not Needed // 
-
-// import Carousel from '../App';
-// import Carousel from '../../../components/Carousel/Carousel';
-// import Carousel from './App/Carousel/Carousel.js';
 
 class Home extends Component {
   // calls the login method in authentication service
@@ -19,37 +14,6 @@ class Home extends Component {
   // calls the logout method in authentication service
   logout = () => {
     this.props.auth.logout();
-  }
-
-  // functions for category buttons //
-  flight = () => {
-    window.location.reload();
-    history.replace("/lists");
-  }
-
-  packinglist = () => {
-    window.location.reload();
-    history.replace("/lists");
-  }
-
-  maps = () => {
-    window.location.reload();
-    history.replace("/map");
-  }
-
-  needToKnow = () => {
-    window.location.reload();
-    history.replace("/need");
-  }
-
-  food = () => {
-    window.location.reload();
-    history.replace("/food");
-  }
-
-  hotel = () => {
-    window.location.reload();
-    history.replace("https://mariamschaudry.github.io/travel/Hotel.html");
   }
 
   render() {
@@ -78,6 +42,8 @@ class Home extends Component {
             <br/>
 
             <App />
+
+            <Buttons />
           </div>
         }
         {
@@ -91,43 +57,14 @@ class Home extends Component {
                   style={{ cursor: 'pointer' }}
                   onClick={this.login}
                 >
-                  Log In
+                  log in
                 </a>
                 {' '}to continue.
               </h5>
             </div>
           )
         }
-
-       <div> 
-  
-        <Button onClick={this.flight}>
-           Flight
-        </Button>
-
-        <Button onClick={this.packinglist}>
-           Packing List
-        </Button>
-
-        <Button onClick={this.maps}>
-           Maps
-        </Button>
-
-        <Button onClick={this.needToKnow}>
-           Need to Know
-        </Button>
-
-        <Button onClick={this.food}>
-           Food &amp; Dining
-        </Button>
-
-        <button>
-         <a href="https://mariamschaudry.github.io/travel/Hotel.html">Hotel</a>
-        </button>
         
-
-      </div>
-
       </div>
       );
     }
