@@ -39,14 +39,14 @@ class Overview extends Component {
 
         <h1 style={{ textAlign: 'center' }}> Restaurant Locator </h1>
 
-        {/* <MapContainer google={this.props.google} /> */}
+        
         <MapContainer google={this.props.google} />
         <p>Created using Google Maps Geocoder API and Create-React-App</p>
         </Col>
         </Row>
        
         </Container>
-        {/* <MapContainer google={this.props.google} /> */}
+        
         
         </div>
     );
