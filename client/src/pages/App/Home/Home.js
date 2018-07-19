@@ -4,7 +4,6 @@ import Background from '../Home/sweden.jpeg';
 import App from '../Carousel';
 import { Button } from 'react-materialize';
 import Buttons from './../Buttons/Buttons';
-import history from '../history';
 
 class Home extends Component {
   // calls the login method in authentication service
@@ -50,16 +49,21 @@ class Home extends Component {
           !isAuthenticated() && (
             <div className="container column">
             <img className = "bg" src = { Background } alt = "Sweden" />
-              <h5>Tours and Travels</h5>
+              <h3>Tours &amp; Travels</h3>
+              <h6>
+                Organize your dream vacation with ease in just a few minutes!
+              </h6>
+              <br />
+              <br />
               <h5>
-                Please{' '}
-                <a
+                {' '}
+                <button
                   style={{ cursor: 'pointer' }}
                   onClick={this.login}
                 >
-                  log in
-                </a>
-                {' '}to continue.
+                  Log In
+                </button>
+                {' '}
               </h5>
             </div>
           )
