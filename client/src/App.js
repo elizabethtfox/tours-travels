@@ -8,7 +8,6 @@ import App from "./pages/App";
 import Overview from "./pages/Overview";
 import Needtoknow from "./pages/Needtoknow";
 import './App.css';
-// import Hotel from "./pages/Hotel";
 
 const Test = () => (
 <Router>
@@ -19,9 +18,7 @@ const Test = () => (
     <Route exact path="/map" component={Map} />
     <Route exact path="/food" component={Overview} />
     <Route exact path="/need" component={Needtoknow} />
-    <Route exact path="/Hotel.html"/>
-
-    {/* <Route exact path="/flight" component={Flight} /> */}
+        
 </Switch>
 </div>
 </Router>

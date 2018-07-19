@@ -3,17 +3,7 @@ import './Home.css';
 import Background from '../Home/sweden.jpeg';
 import App from '../Carousel';
 import { Button } from 'react-materialize';
-import history from '../history';
-// import { Link } from 'react-router-dom';
-// import Icon from '././Icons/airplane-1.png';
-// /Users/mariamchaudry/gtcbc/homework/tours-travels/client/src/pages/App/Home/Icons/airplane-1.png
-
-
-// Not Needed // 
-
-// import Carousel from '../App';
-// import Carousel from '../../../components/Carousel/Carousel';
-// import Carousel from './App/Carousel/Carousel.js';
+import Buttons from './../Buttons/Buttons';
 
 class Home extends Component {
   // calls the login method in authentication service
@@ -23,37 +13,6 @@ class Home extends Component {
   // calls the logout method in authentication service
   logout = () => {
     this.props.auth.logout();
-  }
-
-  // functions for category buttons //
-  flight = () => {
-    window.location.reload();
-    history.replace("/lists");
-  }
-
-  packinglist = () => {
-    window.location.reload();
-    history.replace("/lists");
-  }
-
-  maps = () => {
-    window.location.reload();
-    history.replace("/map");
-  }
-
-  needToKnow = () => {
-    window.location.reload();
-    history.replace("/need");
-  }
-
-  food = () => {
-    window.location.reload();
-    history.replace("/food");
-  }
-
-  hotel = () => {
-    window.location.reload();
-    history.replace("/Hotel.html");
   }
 
   render() {
@@ -82,61 +41,37 @@ class Home extends Component {
             <br/>
 
             <App />
+
+            <Buttons />
           </div>
         }
         {
           !isAuthenticated() && (
             <div className="container column">
             <img className = "bg" src = { Background } alt = "Sweden" />
-              <h5>Tours and Travels</h5>
+              <h3>Tours &amp; Travels</h3>
+              <h6>
+                Organize your dream vacation with ease in just a few minutes!
+              </h6>
+              <br />
+              <br />
               <h5>
-                Please{' '}
-                <a
+                {' '}
+                <button
                   style={{ cursor: 'pointer' }}
                   onClick={this.login}
                 >
                   Log In
-                </a>
-                {' '}to continue.
+                </button>
+                {' '}
               </h5>
             </div>
           )
         }
-
-       <div> 
-  
-        <Button onClick={this.flight}>
-           Flight
-        </Button>
-
-        <Button onClick={this.packinglist}>
-           Packing List
-        </Button>
-
-        <Button onClick={this.maps}>
-           Maps
-        </Button>
-
-        <Button onClick={this.needToKnow}>
-           Need to Know
-        </Button>
-
-        <Button onClick={this.food}>
-           Food &amp; Dining
-        </Button>
-
-        <Button onClick={this.hotel}>
-           Hotel
-        </Button>
-
-      </div>
-
+        
       </div>
       );
     }
   }
-
-
-  /* <a><img src = { Icon } onClick={this.flight}/></a> */
 
   export default Home;
