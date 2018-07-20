@@ -3,10 +3,12 @@ import "./Buttons.css";
 import { Button } from 'react-materialize';
 import history from '../history';
 
+import * as FontAwesome from 'react-icons/lib/fa';
+
 class Buttons extends Component {
     
   // functions for category buttons //
-flight = () => {
+ flight = () => {
     window.location.reload();
     history.replace("https://mariamschaudry.github.io/travel/Flight.html");
   }
@@ -30,6 +32,11 @@ flight = () => {
     window.location.reload();
     history.replace("/food");
   }
+
+  home = () => {
+    window.location.reload();
+    history.replace("/");
+  }
   
   hotel = () => {
     window.location.reload();
@@ -39,13 +46,11 @@ flight = () => {
 	render() {
 		return (
 			<div>
-                <button>
+                <button className="b1">
                     <a href="https://mariamschaudry.github.io/travel/Flight.html">Flight</a>
                 </button>
 
-                <Button onClick={this.packinglist}>
-                    Packing List
-                </Button>
+                <Button waves='light' onClick={this.packinglist}>Packing List</Button>
 
                 <Button onClick={this.maps}>
                     Maps
@@ -59,10 +64,11 @@ flight = () => {
                     Food &amp; Dining
                 </Button>
 
-                <button>
+                <button className="b1">
                     <a href="https://mariamschaudry.github.io/travel/Hotel.html">Hotel</a>
                 </button>
                 
+
 			</div>
 		)
 	}

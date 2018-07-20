@@ -4,6 +4,7 @@ import Background from '../Home/sweden.jpeg';
 import App from '../Carousel';
 import { Button } from 'react-materialize';
 import Buttons from './../Buttons/Buttons';
+import * as FontAwesome from 'react-icons/lib/fa';
 
 class Home extends Component {
   // calls the login method in authentication service
@@ -27,14 +28,25 @@ class Home extends Component {
           isAuthenticated() &&
           <div className="container column">
               <div className="valign-wrapper">
-              <Button>
+
+              <h5 className="planeIcon"><FontAwesome.FaPlane/></h5>
+              <a className="goHome"
+        
+                style={{ cursor: 'pointer' }}
+                onClick={this.home}
+              >
+                Tours &amp; Travels
+              </a>
+
+              <button className="logout"> 
               <a
                 style={{ cursor: 'pointer' }}
                 onClick={this.logout}
               >
                 Log Out
               </a>
-              </Button>
+
+              </button>
               </div>
             {/* </h5> */}
 
@@ -57,7 +69,7 @@ class Home extends Component {
               <br />
               <h5>
                 {' '}
-                <button
+                <button className="login"
                   style={{ cursor: 'pointer' }}
                   onClick={this.login}
                 >

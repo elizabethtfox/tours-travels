@@ -9,8 +9,6 @@ import language from "../../images/language.jpg";
 import transport from "../../images/transport.jpeg";
 
 
-
-
 const Needtoknow = () => (
 <div>
     <Hero backgroundImage="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?cs=srgb&dl=adventure-atlas-business-1051075.jpg&fm=jpg">
