@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Lists from "./pages/Lists";
 import Map from "./pages/Map";
 import App from "./pages/App";
+import Home from "./pages/App";
 import Overview from "./pages/Overview";
 import Needtoknow from "./pages/Needtoknow";
 import './App.css';
@@ -12,6 +13,7 @@ const Test = () => (
 <div>
 <Switch>
     <Route exact path="/" component={App} />
+    <Route exact path="/home" component={Home} />
     <Route exact path="/lists" component={Lists} />
     <Route exact path="/map" component={Map} />
     <Route exact path="/food" component={Overview} />
