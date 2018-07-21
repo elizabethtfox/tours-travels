@@ -7,6 +7,10 @@ import passport from "../../images/passport.jpg";
 import currency from "../../images/currency.jpg";
 import language from "../../images/language.jpg";
 import transport from "../../images/transport.jpeg";
+import Buttons from '../App/Buttons/Buttons';
+import * as FontAwesome from 'react-icons/lib/fa';
+import { Button } from 'react-materialize';
+import history from '../App/history';
 
 
 const Needtoknow = () => (
@@ -49,6 +53,7 @@ const Needtoknow = () => (
                 </p>
             </Col>
         </Row>
+        <Buttons/>
     </Container>
 </div>
 );

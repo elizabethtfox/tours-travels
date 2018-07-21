@@ -3,6 +3,10 @@ import Hero from "../../components/Hero";
 import Container from "../../components/Container";
 import Row from "../../components/Row";
 import Col from "../../components/Col";
+import Buttons from '../App/Buttons/Buttons';
+import * as FontAwesome from 'react-icons/lib/fa';
+import { Button } from 'react-materialize';
+import history from '../App/history';
 
 // import the Google Maps API Wrapper from google-maps-react
 import { GoogleApiWrapper } from 'google-maps-react'
@@ -44,6 +48,7 @@ class Overview extends Component {
         <p>Created using Google Maps Geocoder API and Create-React-App</p>
         </Col>
         </Row>
+        <Buttons/>
        
         </Container>
         
