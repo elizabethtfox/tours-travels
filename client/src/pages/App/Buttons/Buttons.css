@@ -1,0 +1,49 @@
+.flight, .packingList, .maps, .needToKnow, .food, .hotel {
+    width: 170px; 
+    height: 170px; 
+    margin-left: 80px; 
+    margin-bottom: 30px; 
+}
+
+/* FLIGHT BUTTON */
+
+.flight a {
+    font-size:20px;
+    text-decoration: none;
+    display: block;
+    padding:15px;
+}
+
+.flight b {
+    padding: 15px 0;
+    display: none;
+}
+
+.flight img img-responsive {
+    color:#fff;
+    padding-right: 50px;
+}
+
+.flight a:hover {
+    color: #fff;
+}
+
+.flight a:hover b {
+    display: block;
+}
+
+.flight a:hover img {
+    display: inline-block;
+}
+
+.packinglist img {
+    display:block;
+}
+.packinglist b {
+    display: block; 
+
+}
+.buttonHolder {
+    margin-left: 50px;
+    margin-bottom: 40px; 
+}

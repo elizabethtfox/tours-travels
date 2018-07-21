@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import "./Buttons.css";
 import { Button } from 'react-materialize';
 import history from '../history';
+import airplane from '../Images/airplane.png';
+import bellhop from '../Images/bellhop.png';
+import luggage from '../Images/luggage.png';
+import gps from '../Images/gps.png';
+import passport from '../Images/passport.png';
+import dinner from '../Images/dinner.png';
 
 import * as FontAwesome from 'react-icons/lib/fa';
 
@@ -45,28 +51,32 @@ class Buttons extends Component {
 
 	render() {
 		return (
-			<div>
-                <button className="b1">
-                    <a href="https://mariamschaudry.github.io/travel/Flight.html">Flight</a>
-                </button>
-
-                <Button waves='light' onClick={this.packinglist}>Packing List</Button>
-
-                <Button onClick={this.maps}>
-                    Maps
+			<div className="buttonHolder">
+                <Button className="flight">
+                    <a href="https://mariamschaudry.github.io/travel/Flight.html">
+                    <img className="img-responsive" src={airplane} width='90' height='90' padding-right='50px'></img><b>Flight</b></a>
                 </Button>
 
-                <Button onClick={this.needToKnow}>
-                    Need to Know
+                <Button className="packingList" onClick={this.packinglist}>
+                  <img className="img-responsive" src={luggage} width='90' height='90' padding-right='50px'></img>
+                  <b>Packing List</b>
                 </Button>
 
-                <Button onClick={this.food}>
-                    Food &amp; Dining
+                <Button className="maps" onClick={this.maps}>
+                  <img className="img-responsive" src={gps} width='90' height='90' padding-right='50px'></img><b>Maps</b>
                 </Button>
 
-                <button className="b1">
-                    <a href="https://mariamschaudry.github.io/travel/Hotel.html">Hotel</a>
-                </button>
+                <Button className="needToKnow" onClick={this.needToKnow}>
+                  <img className="img-responsive" src={passport} width='90' height='90' padding-right='50px'></img><b>Need to Know</b>
+                </Button>
+
+                <Button className="food" onClick={this.food}>
+                  <img className="img-responsive" src={dinner} width='90' height='90' padding-right='50px'></img><b>Food &amp; Dining</b>
+                </Button>
+
+                <Button className="hotel">
+                    <a href="https://mariamschaudry.github.io/travel/Hotel.html"><img className="img-responsive" src={bellhop} width='90' height='90'></img></a>
+                </Button>
                 
 
 			</div>

@@ -54,6 +54,10 @@ class Home extends Component {
 
             <App />
 
+            <h4>Welcome to Tours &amp; Travels!</h4>
+            <br/>
+            <h5>Click on any button to start planning your trip.</h5>
+            <br/>
             <Buttons />
           </div>
         }
@@ -61,7 +65,7 @@ class Home extends Component {
           !isAuthenticated() && (
             <div className="container column">
             <img className = "bg" src = { Background } alt = "Sweden" />
-              <h3>Tours &amp; Travels</h3>
+              <h3><FontAwesome.FaPlane/>Tours &amp; Travels</h3>
               <h6>
                 Organize your dream vacation with ease in just a few minutes!
               </h6>

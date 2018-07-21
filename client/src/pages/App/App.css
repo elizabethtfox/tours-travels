@@ -14,13 +14,9 @@
   color: white;
 }
 
-/* .carousel {
-  height: 70vh;
-} */
-
 .carousel .carousel-item {
   width:400px !important;
-  height: 400px !important; 
+  height: 200px !important; 
 }
 
 .App-title {
