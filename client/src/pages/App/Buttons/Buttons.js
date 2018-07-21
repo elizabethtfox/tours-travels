@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import "./Buttons.css";
 import { Button } from 'react-materialize';
 import history from '../history';
@@ -12,6 +13,13 @@ import dinner from '../Images/dinner.png';
 import * as FontAwesome from 'react-icons/lib/fa';
 
 class Buttons extends Component {
+
+  constructor(){
+    super()
+    this.state = {
+      shouldTitleDisplay:false
+    }
+  }
     
   // functions for category buttons //
  flight = () => {
@@ -49,33 +57,38 @@ class Buttons extends Component {
     history.replace("https://mariamschaudry.github.io/travel/Hotel.html");
   }
 
+  toggleShow = () => {
+    let shouldTitleDisplay = !this.state.shouldTitleDisplay;
+    this.setState({shouldTitleDisplay});
+  }
+
 	render() {
 		return (
 			<div className="buttonHolder">
-                <Button className="flight">
-                    <a href="https://mariamschaudry.github.io/travel/Flight.html">
-                    <img className="img-responsive" src={airplane} width='90' height='90' padding-right='50px'></img><b>Flight</b></a>
+                <Button className="tile">
+                    <Link to="https://mariamschaudry.github.io/travel/Flight.html" />
+                    <img className="img-responsive" src={airplane} width='90' height='90' padding-right='50px'></img><b>Flight</b>
+                </Button>
+                
+                <Button className="tile" onClick={this.packinglist} >
+                  <img className="img-responsive" src={luggage} width='90' height='90' padding-right='50px'></img><b>Packing List</b>
                 </Button>
 
-                <Button className="packingList" onClick={this.packinglist}>
-                  <img className="img-responsive" src={luggage} width='90' height='90' padding-right='50px'></img>
-                  <b>Packing List</b>
-                </Button>
-
-                <Button className="maps" onClick={this.maps}>
+                <Button className="tile" onClick={this.maps}>
                   <img className="img-responsive" src={gps} width='90' height='90' padding-right='50px'></img><b>Maps</b>
                 </Button>
 
-                <Button className="needToKnow" onClick={this.needToKnow}>
+                <Button className="tile" onClick={this.needToKnow}>
                   <img className="img-responsive" src={passport} width='90' height='90' padding-right='50px'></img><b>Need to Know</b>
                 </Button>
 
-                <Button className="food" onClick={this.food}>
+                <Button className="tile" onClick={this.food}>
                   <img className="img-responsive" src={dinner} width='90' height='90' padding-right='50px'></img><b>Food &amp; Dining</b>
                 </Button>
 
-                <Button className="hotel">
-                    <a href="https://mariamschaudry.github.io/travel/Hotel.html"><img className="img-responsive" src={bellhop} width='90' height='90'></img></a>
+                <Button className="tile">
+                    <Link to="https://mariamschaudry.github.io/travel/Hotel.html"/><img className="img-responsive" src={bellhop} width='90' height='90'></img>
+                    <b>Hotel</b>
                 </Button>
                 
 

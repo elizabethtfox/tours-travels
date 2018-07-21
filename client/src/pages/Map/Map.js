@@ -9,6 +9,8 @@ import photo from "../../images/thingstodo.jpeg"
 import * as FontAwesome from 'react-icons/lib/fa';
 import { Button } from 'react-materialize';
 import Buttons from '../App/Buttons/Buttons';
+import history from '../App/history';
+
 
 // import the Google Maps API Wrapper from google-maps-react
 import { GoogleApiWrapper } from 'google-maps-react'
@@ -20,10 +22,6 @@ class Map extends Component {
             <div>
                 <Hero backgroundImage= { photo }>
                 </Hero>
-                {/* <h5 className="home"><FontAwesome.FaHome/></h5> */}
-
-                
-
                 <Container style={{ marginTop: 30 }}>
                 
                     <Row>
