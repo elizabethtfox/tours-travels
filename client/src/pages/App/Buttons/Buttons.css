@@ -1,0 +1,44 @@
+.tile {
+    width: 150px; 
+    height: 120px; 
+    margin-left: 20px; 
+    margin-bottom: 30px; 
+}
+
+/* FLIGHT BUTTON */
+
+.tile img {
+    font-size:20px;
+    text-decoration: none;
+    display: block;
+    padding:15px;
+}
+
+.tile b {
+    /* padding: 15px 0; */
+    display: none;
+}
+
+.tile img img-responsive {
+    color:#fff;
+    padding-right: 50px;
+}
+
+/* .tile img:hover {
+    color: #fff;
+} */
+
+.tile img:hover img{
+    display: none;
+}
+
+.buttonHolder {
+    margin-right: 80px;
+    margin-bottom: 40px; 
+    width: 1300px;
+    padding-right: 170px; 
+    
+}
+.tile:hover b{
+    display:block;
+}
