@@ -24,6 +24,8 @@
 
 .hero h1, .hero h2 {
   color: white;
+  font-family: 'Kristi', cursive;
+  font-size: 90px;
 }
 
 .hero h1 {

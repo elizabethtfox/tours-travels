@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import "./Buttons.css";
 import { Button } from 'react-materialize';
 import history from '../history';
@@ -66,8 +66,8 @@ class Buttons extends Component {
 		return (
 			<div className="buttonHolder">
                 <Button className="tile">
-                    <Link to="https://mariamschaudry.github.io/travel/Flight.html" />
-                    <img className="img-responsive" src={airplane} width='90' height='90' padding-right='50px'></img><b>Flight</b>
+                    <a href="https://mariamschaudry.github.io/travel/Flight.html">
+                    <img className="img-responsive" src={airplane} width='90' height='90' padding-right='50px'></img><b>Flight</b></a>
                 </Button>
                 
                 <Button className="tile" onClick={this.packinglist} >
@@ -87,8 +87,8 @@ class Buttons extends Component {
                 </Button>
 
                 <Button className="tile">
-                    <Link to="https://mariamschaudry.github.io/travel/Hotel.html"/><img className="img-responsive" src={bellhop} width='90' height='90'></img>
-                    <b>Hotel</b>
+                    <a href="https://mariamschaudry.github.io/travel/Hotel.html"><img className="img-responsive" src={bellhop} width='90' height='90'></img>
+                    <b>Hotel</b></a>
                 </Button>
                 
 

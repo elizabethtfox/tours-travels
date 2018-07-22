@@ -54,8 +54,8 @@ class Home extends Component {
 
             <App />
 
-            <h4>Welcome to Tours &amp; Travels!</h4>
-            <br/>
+            <h3>Welcome to Tours &amp; Travels!</h3>
+            {/* <br/> */}
             <h5>Click on any button to start planning your trip.</h5>
             <br/>
             <Buttons />

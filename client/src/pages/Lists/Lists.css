@@ -5,3 +5,14 @@
     border: 5px solid rgba(73, 204, 249, 1.0);
     padding: 20px;
 }
+
+h2 {
+    z-index: 1;
+    position: absolute;
+    padding-top: 155px;
+    padding-left: 25px;
+    color: white;
+    font-size: 90px;
+    font-family: 'Kristi', cursive;
+    font-weight: lighter;
+}
