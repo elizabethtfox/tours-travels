@@ -36,7 +36,8 @@
     margin-right: 80px;
     margin-bottom: 40px; 
     width: 1300px;
-    padding-right: 170px; 
+    padding-right: 180px; 
+    margin-left: -36px; 
     
 }
 .tile:hover b{

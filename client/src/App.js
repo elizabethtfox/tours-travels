@@ -13,7 +13,7 @@ const Test = () => (
 <div>
 <Switch>
     <Route exact path="/" component={App} />
-    <Route exact path="/home" component={Home} />
+    <Route exact path="/main" component={Home} />
     <Route exact path="/lists" component={Lists} />
     <Route exact path="/map" component={Map} />
     <Route exact path="/food" component={Overview} />
