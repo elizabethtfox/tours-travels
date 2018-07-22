@@ -22,6 +22,7 @@
 .tile img img-responsive {
     color:#fff;
     padding-right: 50px;
+    text-decoration: none;
 }
 
 /* .tile img:hover {
@@ -30,15 +31,26 @@
 
 .tile img:hover img{
     display: none;
+    text-decoration: none;
+
 }
 
 .buttonHolder {
     margin-right: 80px;
     margin-bottom: 40px; 
     width: 1300px;
-    padding-right: 170px; 
+    /* padding-right: 180px;  */
+    margin-left: -30px; 
+    
     
 }
 .tile:hover b{
     display:block;
+    text-decoration: none;
+}
+
+b, a {
+    text-decoration: none;
+    color: white;
+
 }

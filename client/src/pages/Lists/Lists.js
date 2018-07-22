@@ -4,6 +4,9 @@ import Input from '../../components/Input/Input';
 import Item from '../../components/Item/Item';
 import Hero from "../../components/Hero";
 import back from "../../images/list-background.jpeg"
+import packing from "../../images/packing.jpeg"
+import Buttons from '../App/Buttons/Buttons';
+
 import "./Lists.css";
 
 class Lists extends Component {
@@ -40,10 +43,13 @@ class Lists extends Component {
     render() {
         return (
             <div className="App">
-                <Hero backgroundImage= { back }>
+                {/* <Hero backgroundImage= { back }>
+                </Hero> */}
+
+                <Hero backgroundImage= { packing }>
                 </Hero>
 
-                <h2>Don't forget any items for your trip!</h2>
+                {/* <h2>Don't forget any items for your trip!</h2> */}
 
                 <div className="todo-wrapper">
                     <Header />
@@ -56,6 +62,9 @@ class Lists extends Component {
                      }
                     </ul>
                 </div>
+
+                <Buttons />
+
             </div>
     );
     }
