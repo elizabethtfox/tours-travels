@@ -43,13 +43,13 @@ class Lists extends Component {
     render() {
         return (
             <div className="App">
-                {/* <Hero backgroundImage= { back }>
-                </Hero> */}
-
+            
                 <Hero backgroundImage= { packing }>
                 </Hero>
 
-                {/* <h2>Don't forget any items for your trip!</h2> */}
+                <h2 class="listTitle">Don't forget any items for your trip!</h2>
+
+                <br />
 
                 <div className="todo-wrapper">
                     <Header />
