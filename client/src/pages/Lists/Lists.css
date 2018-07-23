@@ -6,13 +6,11 @@
     padding: 20px;
 }
 
-#packinglist{
-    z-index: 1;
-    position: absolute;
-    padding-top: 155px;
-    padding-left: 25px;
-    color: white;
-    font-size: 90px;
+.listTitle{
+    /* z-index: 1;
+    position: absolute; */
+    /* color: white; */
+    font-size: 75px;
     font-family: 'Kristi', cursive;
     font-weight: lighter;
 }

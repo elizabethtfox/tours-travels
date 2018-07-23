@@ -43,11 +43,11 @@ class Lists extends Component {
     render() {
         return (
             <div className="App">
-               
+            
                 <Hero backgroundImage= { packing }>
                 </Hero>
 
-                <h2 className="listHeading">Don't forget any items for your trip!</h2>
+                <h2 class="listTitle">Don't forget any items for your trip!</h2>
 
                 <br />
 
