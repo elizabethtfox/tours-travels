@@ -16,3 +16,9 @@
     font-family: 'Kristi', cursive;
     font-weight: lighter;
 }
+
+.listHeading {
+  /* color: white; */
+  font-family: 'Kristi', cursive;
+  font-size: 80px;
+}
