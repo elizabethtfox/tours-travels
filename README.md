@@ -37,7 +37,7 @@ No installation required just download and open in your browser
 * [MongoDB](https://www.mongodb.com/) - open-source cross-platform document-oriented database program
 * [React.js](https://reactjs.org/) - JavaScript library for building user interfaces
 * [Bootstrap](https://getbootstrap.com/) - open-source front-end framework for designing websites and web applications
-* [Passport.js](http://www.passportjs.org/) - authentication middleware for Node.js
+* [Auth0](https://auth0.com/) - authentication middleware.
 * [Express.js](http://www.expressjs.com/) - a web application framework for Node.js
 
 ## Contributing Authors and Roles
